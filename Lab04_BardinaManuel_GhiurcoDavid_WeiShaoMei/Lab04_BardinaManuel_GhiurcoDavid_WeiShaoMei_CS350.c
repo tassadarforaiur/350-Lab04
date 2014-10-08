@@ -181,7 +181,6 @@ FILE *get_datafile(int argc, char *argv[]) {
 // control and general-purpose registers
 // 
 void dump_control_unit(int pc, int ir, int running, int reg[], int nreg) {
-	// *** STUB ****
   printf("pc :    %02d   IR :   %04d  RUNNING : %d\n", pc, ir, running);
 	dump_registers(reg, nreg);
 }
@@ -193,7 +192,6 @@ void dump_control_unit(int pc, int ir, int running, int reg[], int nreg) {
 void dump_memory(int mem[], int memlen) {
 	int loc = 0;
 	int row, col;
-	// *** STUB ****
 	for (row = 0; row < 100; row +=10)
 	  {
 	    printf("%02d:",row);

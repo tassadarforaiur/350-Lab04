@@ -44,7 +44,7 @@ void exec_HLT(int reg_R, int addr_MM, int instr_sign, int reg[], int nreg, int m
 // and execute the read-in program starting at location 00.
 //
 int main(int argc, char *argv[]) {
-	printf("SDC Simulator sample solution: CS 350 Lab 4\n");
+	printf("CS 350 Lab 4\n Bardina_Manuel, Mei_WeiShao, Ghiurco_David");
 	initialize_control_unit(reg, NREG);
 	initialize_memory(argc, argv, mem, MEMLEN);
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
 	printf("At termination\n");
 	dump_control_unit(pc, ir, running, reg, NREG);
 	printf("\n");
-	dump_memory(mem, MEMLEN);
+        dump_memory(mem, MEMLEN);
 	return 0;
 }
 
@@ -68,8 +68,8 @@ int main(int argc, char *argv[]) {
 // the general-purpose registers
 //
 void initialize_control_unit(int reg[], int nreg) {
-	
-	// *** STUB ***
+  //do you guys even read the code?	
+  
   pc = 0;
   ir = 0;
   running = 1;
@@ -181,7 +181,6 @@ FILE *get_datafile(int argc, char *argv[]) {
 // control and general-purpose registers
 // 
 void dump_control_unit(int pc, int ir, int running, int reg[], int nreg) {
-	// *** STUB ****
   printf("pc :    %02d   IR :   %04d  RUNNING : %d\n", pc, ir, running);
 	dump_registers(reg, nreg);
 }
@@ -196,12 +195,13 @@ void dump_memory(int mem[], int memlen) {
 	// *** STUB ****
 	for (row = 0; row < 100; row +=10)
 	  {
-	    printf("\n  %02d:",row);
+	    printf("%02d:",row);
 	    for(col=row; col < row +10; col++)
 	      {
 		if(col%10 == 5) printf(" ");
 		printf("%6d",mem[col]);
 	      }
+	    printf("\n");
 	  }
 }
 
